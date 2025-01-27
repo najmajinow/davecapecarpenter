@@ -3,29 +3,31 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #fff; /* White background */
-    color: #000; /* Black text */
+    background-color: #fff;
+    color: #000;
+    line-height: 1.6;
 }
 
 /* Header Styles */
 .header {
-    background: #fff; /* White background */
-    color: #000; /* Black text */
-    padding: 1rem; /* Padding for spacing */
+    background: #fff;
+    color: #000;
+    padding: 1rem;
     text-align: left;
-    font-size: 0.5rem; /* Adjusted font size */
+    font-size: 1rem;
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 1000;
-    border-bottom: 1px solid #ddd; /* Subtle border for separation */
-    box-sizing: border-box; /* Ensure padding doesn’t affect dimensions */
+    border-bottom: 1px solid #ddd;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
 }
 
 .nav ul {
     list-style: none;
-    padding: 0;
     margin: 0;
+    padding: 0;
     display: flex;
     justify-content: center;
     gap: 1.5rem;
@@ -34,125 +36,119 @@ body {
 
 .nav ul li a {
     text-decoration: none;
-    color: #000; /* Black text */
+    color: #000;
     font-size: 1rem;
-    transition: color 0.3s;
+    font-weight: 500;
+    transition: color 0.3s ease;
 }
 
 .nav ul li a:hover {
-    color: #333; /* Slightly darker black on hover */
+    color: #555;
 }
 
 /* Main Content Adjustment */
 body {
-    padding-top: 80px; /* Adjust the value to match the height of the fixed header */
+    padding-top: 80px; /* Adjust to header height */
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* Home Section Styles */
 .home {
-    background: #fff; /* White background */
+    background: #f8f9fa;
     text-align: center;
-    padding: 4rem 1rem; /* Adjusted padding */
+    padding: 4rem 2rem;
 }
 
 .home h2 {
-    color: #000; /* Black text */
-    font-size: 2.5rem; /* Large heading */
+    color: #000;
+    font-size: 2.5rem;
     margin-bottom: 1rem;
 }
 
 .home p {
-    font-size: 1.2rem; /* Standardized font size */
-    color: #000; /* Black text */
+    font-size: 1.2rem;
+    color: #555;
 }
 
 /* Countdown Section */
 .countdown {
     display: flex;
     justify-content: center;
-    text-align: center;
-    margin-top: 2rem;
-    background-color: #fff; /* White background */
-    padding: 2rem;
+    align-items: center;
     flex-wrap: wrap;
+    margin: 2rem auto;
+    background: #fff;
+    padding: 2rem;
+    gap: 1rem;
 }
 
 .counter-item {
-    margin: 0 1rem;
-    padding: 1rem;
-    background: #fff; /* White background */
+    text-align: center;
+    padding: 1.5rem;
+    background: #fff;
     border-radius: 8px;
     width: 150px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.counter-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 .counter-item h3 {
     font-size: 2rem;
+    color: #000;
     margin-bottom: 0.5rem;
-    color: #000; /* Black text */
 }
 
 .counter-item p {
     font-size: 1rem;
-    margin: 0;
-    color: #000; /* Black text */
+    color: #555;
 }
 
 /* About Us Section */
 .about {
-    background: #fff; /* White background */
-    color: #000; /* Black text */
+    background: #f8f9fa;
     text-align: center;
-    padding: 2rem 1rem;
+    padding: 3rem 2rem;
+    color: #000;
 }
 
 /* Services Section */
 .services {
-    background: #fff; /* White background */
+    background: #fff;
     text-align: center;
-    padding: 3rem 1rem;
+    padding: 4rem 2rem;
 }
 
 .services h2 {
-    margin-bottom: 1rem;
-    color: #000; /* Black text */
+    color: #000;
     font-size: 2.5rem;
+    margin-bottom: 1.5rem;
 }
 
 .services p {
-    color: #000; /* Black text */
+    color: #555;
     font-size: 1.2rem;
     margin-bottom: 2rem;
 }
 
-/* Service Grid */
 .service-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 1.5rem;
+    gap: 2rem;
     justify-content: center;
 }
 
 .service-item {
-    background: #fff; /* White background */
+    background: #fff;
     border: 1px solid #ddd;
     border-radius: 8px;
-    padding: 1.5rem;
-    transition: transform 0.3s, box-shadow 0.3s;
-    text-align: center;
+    padding: 2rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .service-icon {
@@ -169,13 +165,13 @@ body {
 
 /* Gallery Section */
 .gallery {
-    background-color: #fff; /* White background */
-    padding: 3rem 1rem;
+    background: #f8f9fa;
     text-align: center;
+    padding: 4rem 2rem;
 }
 
 .gallery h2 {
-    color: #000; /* Black text */
+    color: #000;
     font-size: 2.5rem;
     margin-bottom: 1.5rem;
 }
@@ -183,8 +179,8 @@ body {
 .gallery-grid {
     display: flex;
     justify-content: center;
-    gap: 1rem;
     flex-wrap: wrap;
+    gap: 1rem;
 }
 
 .gallery-grid img {
@@ -197,19 +193,19 @@ body {
 
 /* Contact Section */
 .contact {
-    background: #fff; /* White background */
-    padding: 3rem 1rem;
+    background: #fff;
     text-align: center;
+    padding: 4rem 2rem;
 }
 
 .contact h2 {
-    color: #000; /* Black text */
+    color: #000;
     font-size: 2.5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
 }
 
 .contact p {
-    color: #000; /* Black text */
+    color: #555;
     font-size: 1.2rem;
     margin-bottom: 2rem;
 }
@@ -233,33 +229,33 @@ body {
 
 .contact form button {
     padding: 0.8rem;
-    background: #000; /* Black button */
+    background: #000;
     color: #fff;
     border: none;
     border-radius: 8px;
     font-size: 1rem;
     cursor: pointer;
-    transition: background 0.3s;
+    transition: background 0.3s ease;
 }
 
 .contact form button:hover {
-    background: #333; /* Slightly darker black on hover */
+    background: #333;
 }
 
 /* Footer */
 footer {
     text-align: center;
-    padding: 0.5rem 0;
-    background: #000; /* Black background */
+    padding: 1rem 0;
+    background: #000;
     color: #fff;
     font-size: 0.9rem;
 }
 
 /* Responsive Styles */
-@media (max-width: 600px) {
-    .header {
-        font-size: 1rem;
-        padding: 0.5rem;
+@media (max-width: 768px) {
+    .nav ul {
+        flex-direction: column;
+        align-items: center;
     }
 
     .countdown {
@@ -267,18 +263,8 @@ footer {
         gap: 1rem;
     }
 
-    .home {
-        padding: 2rem 1rem;
-    }
-
-    .services h2,
-    .gallery h2 {
-        font-size: 2rem;
-    }
-
     .service-grid {
         grid-template-columns: 1fr;
-        gap: 1rem;
     }
 
     .gallery-grid img {
@@ -286,9 +272,16 @@ footer {
         height: 100px;
     }
 
+    .home h2,
+    .services h2,
+    .gallery h2,
+    .contact h2 {
+        font-size: 2rem;
+    }
+
     .contact form input,
     .contact form textarea,
     .contact form select {
-        padding: 0.6rem;
+        padding: 0.7rem;
     }
 }
